@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Henry's Ark</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic' rel='stylesheet' type='text/css'>
+	<Link rel="stylesheet" href="normalize.css">
+	<Link rel="stylesheet" href="main.css">
+	<Link rel="stylesheet" href="responsive.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>	
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+ 	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(38.363799, -85.616321),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+  </script>
+</head>
+<body>
+	<header>
+		<a href="index.html" id="logo">
+			<h1>Welcome to</h1>
+			<h2>Henry's Ark</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="location.html" class="selected">Location and Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div id="map-canvas"></div>
+	<p>
+		Located just off of Rose Island road in Prospect KY.
+	</p>
+	<p>
+		If you have any questions or concerns please contact us at 502-228-0746
+	</p>
+	<footer>
+		<a href="https://www.facebook.com/pages/Henrys-Ark/77019606323"> <img src="asset/img/facebook-wrap.png" alt="facebook-Logo" class="social icon"></a>
+		<a href="http://twitter.com"> <img src="asset/img/twitter-wrap.png" alt="twitter-Logo" class="social icon"></a>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="asset/js/script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
