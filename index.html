@@ -5,12 +5,13 @@
 	<title>Henry's Ark</title>
 	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
 	<Link rel="stylesheet" href="asset/css/normalize.css">
-	<Link rel="stylesheet" href="asset/css/main.css">
+	<Link rel="stylesheet" href="asset/css/main.css">	
 	<Link rel="stylesheet" href="asset/css/responsive.css">
+	<link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">	
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">	
 </head>
 <body>
-	<header>
+	<header class="clearfix">
 		<a href="index.html" id="logo">
 			<h1>Welcome to</h1>
 			<h2>Henry's Ark</h2>
@@ -33,21 +34,25 @@
 
 				<p>We are open Tuesday - Sunday 10:00am-4:00pm. Our gates will close at 3:00pm.</p>
 			</div>
-			<h3>We ask that you please follow these simple rules.<br>Please refrain from the following</h3>
-			<ul>
-				<li>Feeding the animals</li>
-				<li>Running</li>
-				<li>Climbing the fences</li>
-				<li>Picking up the animals</li>
-				<li>Yelling or throwing things at the animals</li>
-			</ul>	
-			<p>If you have food that you would like to donate for the animals please <a href="location.html">contact us</a> prior to bringing it to confirm that one of our staff will be available.</p>
+			<div class="clearfix">
+				<div class="section-left">
+					<h3>We ask that you please follow these simple rules.<br>Please refrain from the following</h3>
+					<ul>
+						<li>Feeding the animals</li>
+						<li>Running</li>
+						<li>Climbing the fences</li>
+						<li>Picking up the animals</li>
+						<li>Yelling or throwing things at the animals</li>
+					</ul>
+				</div>
+				<p class="section-right">If you have food that you would like to donate for the animals please <a href="location.html">contact us</a> prior to bringing it to confirm that one of our staff will be available.</p>
+			</div>	
 		</div>
 	</main>
-	<footer id="main-footer">
-		<a href="https://www.facebook.com/pages/Henrys-Ark/77019606323"> <img src="asset/img/facebook-wrap.png" alt="facebook-Logo" class="social icon"></a>
-		<a href="http://twitter.com"> <img src="asset/img/twitter-wrap.png" alt="twitter-Logo" class="social icon"></a>
-		<p><p>&copy; 2015 Andrew Martin</p>
+	<footer id="main-footer" class="clearfix">
+		<a href="https://www.facebook.com/pages/Henrys-Ark/77019606323"><i class="fa fa-facebook-square fa-5x"></i> </a>
+		<a href="http://twitter.com"><i class="fa fa-twitter fa-5x"></i></a>
+		<p>&copy; 2015 Andrew Martin</p>
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="asset/js/script.js" type="text/javascript" charset="utf-8"></script>

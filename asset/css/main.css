@@ -1,6 +1,18 @@
 /**************************************
 GENERAL
 **************************************/
+.section-left {
+
+  float: left;
+  width:45%;
+}
+
+.section-right {
+  float: left;
+  width: 45%;
+  margin-left: 10%;  
+  padding-top: 10%ß;
+}
 
 * {
   box-sizing: border-box;
@@ -100,6 +112,7 @@ nav {
   text-align: center;
   padding:5px 0;
   margin: 15px 0 0;
+
 }
 
 nav a, nav a:visited {
@@ -114,18 +127,27 @@ nav a.selected, nav a:hover {
 FOOTER
 **************************************/
 
+
 #main-footer {
 
   font-size: 0.75em;
   text-align: center;
   padding-top:10px ;
   padding-bottom:10px ;
-  margin:0 0 0 0 ;
+  margin: 0 0 -50px 0;
   background-color: #3498db;
   color: white;
+
 }
 
-/*border-bottom: solid 60px #3498db; */
+#main-footer a {
+  color:white;
+}
+
+#main-footer a:hover {
+  color:#bdc3c7;
+}
+
 
 /**************************************
 COLORS
@@ -145,39 +167,94 @@ HOMEPAGE
 
   max-width: 1200px;
   margin: 0 auto;
+}
 
+@media only screen and (min-width: 690px) {
+  .container {
+
+  }
 }
 
 
 
 /**************************************
-CONTACT PAGE
+CONTACT PAGE/LOCATION
 **************************************/
+
+
 
 /**************************************
 GALLERY PAGE
 **************************************/
 
-#GALLERY {
-  margin:0;
-  padding:0;
-  list-style: none; /* in this instance list style is a redundecny but it normally removes bullet points from a list*/
+#gallery li {
+  width:45%;
+  display:inline;
+  margin: 2.5%;
+  padding:10px 10px 10px 10px;
+  list-style: none;
 }
 
-#gallery li {
-  float: ;
-  width:45%;
-  margin: 2.5%;
+
+#gallery img {
+  max-width: 75%;
+  max-height: 150px;
+  vertical-align: top;
+
+}
+
+#gallery {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
 }
 
 #gallery img {
-  max-width: 50%;
-  max-height: 150px;
-
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
 }
 
-/* LIGHTBOX */
+/* MEDIA QUERIES FOR SEAMLESS PHOTO GRID */
+@media (max-width: 1200px) {
+  #gallery {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
 
+
+/* LIGHTBOX */
+/*
 #overlay {
   background:rgba(0,0,0,0.7);
   width:100%;
@@ -198,4 +275,4 @@ GALLERY PAGE
 color:white;
 }
                  
-
+*/
