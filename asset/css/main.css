@@ -1,0 +1,281 @@
+/**************************************
+GENERAL
+**************************************/
+.section-left {
+
+  float: left;
+  width:45%;
+}
+
+.section-right {
+  float: left;
+  width: 45%;
+  margin-left: 10%;  
+  padding-top: 10%ß;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+	font-family: 'Bitter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+
+  max-width: 100%;
+}
+
+img li {
+  max-width: ;
+}
+
+.homepagegoat {
+
+  max-width: 400px;
+  float:left;
+  display: block;
+  margin:0 20px 20px 0;
+}
+
+/**************************************
+HEADING
+**************************************/
+
+header {
+  background: #3498db;
+  border-color:;
+  float:left;
+  width: 100%;
+  margin:0 0 30px 0;
+  padding:5px 0 0 0;
+}
+
+h1 {
+  margin: 0px 0 15px 0;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: ;
+}
+h2{
+  font-size: 4em;
+  margin: -5px 0 0;
+  font-weight: normal;
+
+}
+
+h1, h2 {
+  color:white;
+
+}
+
+
+#logo {
+  text-align: center;
+  margin:0;
+}
+
+
+/**************************************
+NAVIGATION
+**************************************/
+
+nav {
+  background-color: #2980b9;
+  text-align: center;
+  margin: 15px 0 0;
+  padding:5px 0;
+
+}
+
+nav a, nav a:visited {
+  color:white;
+}
+
+nav a.selected, nav a:hover {
+  color:#bdc3c7;
+}
+
+/**************************************
+FOOTER
+**************************************/
+
+#main-footer {
+
+  font-size: 0.75em;
+  text-align: center;
+  padding-top:10px ;
+  padding-bottom:10px ;
+  margin: 0 0 -50px 0;
+  background-color: #3498db;
+  color: white;
+  height:100px;
+}
+
+#main-footer a {
+  color:white;
+}
+
+#main-footer a:hover {
+  color:#bdc3c7;
+}
+
+i {
+  padding:0 .05em;
+}
+
+
+/**************************************
+COLORS
+**************************************/
+
+/**************************************
+HOMEPAGE
+**************************************/
+
+#main-content {
+  max-width: 940px;
+  margin:0 auto;
+  padding: 0 5%;
+}
+
+.container {
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 690px) {
+  .container {
+
+  }
+}
+
+
+
+/**************************************
+CONTACT PAGE/LOCATION
+**************************************/
+
+
+
+/**************************************
+GALLERY PAGE
+**************************************/
+
+#gallery li {
+  width:45%;
+  display:inline;
+  margin: 2.5%;
+  padding:10px 10px 10px 10px;
+  list-style: none;
+}
+
+
+#gallery img {
+  max-width: 75%;
+  max-height: 150px;
+  vertical-align: top;
+
+}
+
+#gallery {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px;  
+}
+
+#gallery img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* MEDIA QUERIES FOR SEAMLESS PHOTO GRID */
+@media (max-width: 1200px) {
+  #gallery {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+
+/* LIGHTBOX */
+/*
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+#overlay img {
+  margin-top:10%;
+  
+}
+
+#overlay p {
+color:white;
+}
+                 
+*/
