@@ -79,14 +79,22 @@ header {
 }
 
 h1 {
+<<<<<<< HEAD
   margin: 0px 0 15px 0;
+=======
+  margin: 15px 0;
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
   font-size: 3em;
   font-weight: normal;
   line-height: ;
 }
 h2{
   font-size: 4em;
+<<<<<<< HEAD
   margin: -5px 0 0;
+=======
+  margin:-5px 0 0;
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
   font-weight: normal;
 
 }
@@ -110,8 +118,13 @@ NAVIGATION
 nav {
   background-color: #2980b9;
   text-align: center;
+<<<<<<< HEAD
   margin: 15px 0 0;
   padding:5px 0;
+=======
+  padding:5px 0;
+  margin: 15px 0 0;
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
 
 }
 
@@ -127,6 +140,10 @@ nav a.selected, nav a:hover {
 FOOTER
 **************************************/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
 #main-footer {
 
   font-size: 0.75em;
@@ -136,7 +153,11 @@ FOOTER
   margin: 0 0 -50px 0;
   background-color: #3498db;
   color: white;
+<<<<<<< HEAD
   height:100px;
+=======
+
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
 }
 
 #main-footer a {
@@ -147,10 +168,13 @@ FOOTER
   color:#bdc3c7;
 }
 
+<<<<<<< HEAD
 i {
   padding:0 .05em;
 }
 
+=======
+>>>>>>> 1f7667c1cb9c5b7146e4478c38ddc0187a0d5911
 
 /**************************************
 COLORS
