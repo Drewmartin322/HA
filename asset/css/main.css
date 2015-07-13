@@ -79,14 +79,14 @@ header {
 }
 
 h1 {
-  margin: 0px 0 15px 0;
+  margin: 15px 0;
   font-size: 3em;
   font-weight: normal;
   line-height: ;
 }
 h2{
   font-size: 4em;
-  margin: -5px 0 0;
+  margin:-5px 0 0;
   font-weight: normal;
 
 }
@@ -110,9 +110,8 @@ NAVIGATION
 nav {
   background-color: #2980b9;
   text-align: center;
-  margin: 15px 0 0;
   padding:5px 0;
-
+  margin: 15px 0 0;
 }
 
 nav a, nav a:visited {
@@ -150,7 +149,6 @@ FOOTER
 i {
   padding:0 .05em;
 }
-
 
 /**************************************
 COLORS
@@ -209,8 +207,6 @@ GALLERY PAGE
 #gallery {
   /* Prevent vertical gaps */
   line-height: 0;
-
-   
   -webkit-column-count: 5;
   -webkit-column-gap:   0px;
   -moz-column-count:    5;
@@ -257,12 +253,11 @@ GALLERY PAGE
 
 
 /* LIGHTBOX */
-/*
 #overlay {
   background:rgba(0,0,0,0.7);
   width:100%;
-  height:100%;
-  position:absolute;
+  min-height:100%;
+  position:fixed;
   top:0;
   left:0;
   display:none;
@@ -270,12 +265,9 @@ GALLERY PAGE
 }
 
 #overlay img {
-  margin-top:10%;
-  
+  /* margin-top:10%; */
 }
 
 #overlay p {
-color:white;
+  color:white;
 }
-                 
-*/
