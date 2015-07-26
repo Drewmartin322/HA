@@ -63,15 +63,22 @@ img li {
   float:left;
   display: block;
   margin:0 20px 20px 0;
+  border-radius: 50%;
 }
+
+
 
 /**************************************
 HEADING
 **************************************/
 
 header {
-  background: #3498db;
+  background: ;
   border-color:;
+  background-image: url("../Img/cool-bg.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
   float:left;
   width: 100%;
   margin:0 0 30px 0;
@@ -107,19 +114,32 @@ h1, h2 {
 NAVIGATION
 **************************************/
 
-nav {
-  background-color: #2980b9;
+.main-nav {
+  background-color: black;
   text-align: center;
   padding:5px 0;
   margin: 15px 0 0;
 }
 
-nav a, nav a:visited {
+.main-nav a, .main-nav a:visited {
   color:white;
 }
 
-nav a.selected, nav a:hover {
+.main-nav a.selected, .main-nav a:hover {
   color:#bdc3c7;
+}
+
+.main-nav ul {
+  padding: 0;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.main-nav ul li:last-child {
+  padding-right: 0;
 }
 
 /**************************************
@@ -133,7 +153,7 @@ FOOTER
   padding-top:10px ;
   padding-bottom:10px ;
   margin: 0 0 -50px 0;
-  background-color: #3498db;
+  background-color: black;
   color: white;
   height:100px;
 }
@@ -168,6 +188,7 @@ HOMEPAGE
 
   max-width: 1200px;
   margin: 0 auto;
+  padding:0 20px;
 }
 
 @media only screen and (min-width: 690px) {
@@ -182,6 +203,9 @@ HOMEPAGE
 CONTACT PAGE/LOCATION
 **************************************/
 
+.map {
+  float:left;
+}
 
 
 /**************************************
