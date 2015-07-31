@@ -75,3 +75,9 @@ header {
   
 }
 */
+
+/* at a maximum width of 450px this will return true, between 0px and 450px styles will be applied*/
+@media (max-width: 450px) {
+  body{background:red;}
+
+}
