@@ -61,10 +61,28 @@ img li {
 .homepagegoat {
 
   max-width: 400px;
+  width:100%;
   float:left;
   display: block;
   margin:0 20px 20px 0;
   border-radius: 50%;
+}
+
+/*****GOOGLE MAP API******/
+#map-canvas {
+        width: 45%;
+        height: 400px;
+        float:left;
+      }
+
+.location-text {
+  float:left;
+  padding-left:30px;
+  width:50%;
+}
+
+.map-page {
+  padding: 0 30px 30px 30px;
 }
 
 
@@ -183,10 +201,6 @@ i {
 }
 
 /**************************************
-COLORS
-**************************************/
-
-/**************************************
 HOMEPAGE
 **************************************/
 
@@ -207,16 +221,6 @@ HOMEPAGE
   .container {
 
   }
-}
-
-
-
-/**************************************
-CONTACT PAGE/LOCATION
-**************************************/
-
-.map {
-  float:left;
 }
 
 

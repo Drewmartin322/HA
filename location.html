@@ -9,14 +9,7 @@
 	<Link rel="stylesheet" href="asset/css/main.css">
 	<Link rel="stylesheet" href="asset/css/responsive.css">
 	<link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">	
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<style>
-      #map-canvas {
-        width: 500px;
-        height: 400px;
-        margin-left: 40px;
-      }
-    </style>	
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">	
     <script src="https://maps.googleapis.com/maps/api/js"></script>
  	<script>
       function initialize() {
@@ -48,28 +41,29 @@
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-  </script>
+	</script>
 </head>
 <body>
-	<header>
+	<header class="clearfix">
 		<a href="index.html" id="logo">
-			<h1>Welcome to</h1>
-			<h2>Henry's Ark</h2>
+			<h1 class="page-title">Welcome to<br><span class="heading-text-large">Henry's Ark</span></h1>
 		</a>
 		<nav class="main-nav">
 			<ul>
-				<li><a href="index.html" >Home</a></li>
+				<li><a href="index.html" class="selected">Home</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="location.html" class="selected">Location and Contact</a></li>
+				<li><a href="location.html">Location and Contact</a></li>
 			</ul>
 		</nav>
 	</header>
+	<main>
+	<div class="clearfix map-page">
 		<div id="map-canvas"></div>
-	<p>
+	<p class="location-text">
 		Located at 7801 Rose Island road in Prospect KY.<br><br>
 		If you have any questions or concerns please contact us at 502-228-0746
 	</p>
+	</div>
 	</main>
 	<footer id="main-footer" class="clearfix">
 		<a href="https://www.facebook.com/pages/Henrys-Ark/77019606323"><i class="fa fa-facebook-square fa-4x"></i> </a>
