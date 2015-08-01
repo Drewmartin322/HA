@@ -1,3 +1,4 @@
+
 /**************************************
 GENERAL
 **************************************/
@@ -75,7 +76,7 @@ HEADING
 header {
   background: ;
   border-color:;
-  background-image: url("../img/cool-bg.png");
+  background-image: url("../img/headbg.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -91,12 +92,15 @@ h1 {
   font-weight: normal;
   line-height: ;
 }
+
+/*
 h2{
   font-size: 4em;
   margin:-5px 0 0;
   font-weight: normal;
 
 }
+*/
 
 h1, h2 {
   color:white;
@@ -104,11 +108,19 @@ h1, h2 {
 }
 
 
+
 #logo {
   text-align: center;
   margin:0;
 }
 
+.heading-text-large {
+  font-size:1.4em;
+}
+
+.page-title {
+  text-shadow:1px 1px 1px #333;
+}
 
 /**************************************
 NAVIGATION
