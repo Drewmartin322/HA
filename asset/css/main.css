@@ -92,15 +92,12 @@ HEADING
 **************************************/
 
 header {
-  background: ;
-  border-color:;
   background-image: url("../img/headbg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
   float:left;
   width: 100%;
-  margin:0 0 30px 0;
+  margin:-16px 0 30px 0;
   padding:5px 0 0 0;
 }
 
@@ -125,8 +122,6 @@ h1, h2 {
 
 }
 
-
-
 #logo {
   text-align: center;
   margin:0;
@@ -145,7 +140,7 @@ NAVIGATION
 **************************************/
 
 .main-nav {
-  background-color: black;
+background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding:5px 0;
   margin: 15px 0 0;
@@ -182,8 +177,8 @@ FOOTER
   text-align: center;
   padding-top:10px ;
   padding-bottom:10px ;
-  margin: 0 0 -50px 0;
-  background-color: black;
+  margin: 0 0 0 0;
+  background-color: #000;
   color: white;
   height:100px;
 }
@@ -197,7 +192,7 @@ FOOTER
 }
 
 i {
-  padding:0 .05em;
+  padding: 0 .05em;
 }
 
 /**************************************
